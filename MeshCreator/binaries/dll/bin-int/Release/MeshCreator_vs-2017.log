@@ -1,0 +1,12 @@
+﻿  Mesh_Creator_Controller.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  Path.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  Generando código...
+     Creando biblioteca C:\Users\Versus\Desktop\Tools\UnityTool\MeshCreator\Projects\MeshCreator_vs-2017\../../binaries/dll/bin/Release\MeshCreator_vs-2017.lib y objeto C:\Users\Versus\Desktop\Tools\UnityTool\MeshCreator\Projects\MeshCreator_vs-2017\../../binaries/dll/bin/Release\MeshCreator_vs-2017.exp
+  Generando código
+  0 of 225 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  MeshCreator_vs-2017.vcxproj -> C:\Users\Versus\Desktop\Tools\UnityTool\MeshCreator\Projects\MeshCreator_vs-2017\../../binaries/dll/bin/Release\MeshCreator_vs-2017.dll

@@ -1,0 +1,347 @@
+\hypertarget{class_m_c_1_1_path}{}\section{MC\+::Path Class Reference}
+\label{class_m_c_1_1_path}\index{MC::Path@{MC::Path}}
+
+
+{\ttfamily \#include $<$Path.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_c_1_1_path_a976837d95eefdfb2b2dd1b423326cc03}{Path}} (int ID)
+\begin{DoxyCompactList}\small\item\em Crea un \mbox{\hyperlink{class_m_c_1_1_path}{Path}} vacio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_c_1_1_path_accd90c4da12784f0db738d4151795bd9}{Path}} (int ID, float $\ast$array\+\_\+\+Pointer, int number\+\_\+of\+\_\+points)
+\begin{DoxyCompactList}\small\item\em Crea un \mbox{\hyperlink{class_m_c_1_1_path}{Path}} a partir de un array de puntos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_aeccc57f27fbb2476b23497dca4e332fc}{Load}} (string path)
+\begin{DoxyCompactList}\small\item\em Carga los datos del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} a partir de un archivo binario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_a2e01f65cf05fed31b64bca532a725584}{Save}} (string path)
+\begin{DoxyCompactList}\small\item\em Guarda los datos del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} en un archivo binario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_ab846d8ee5ba7519030f263c6539afc79}{Add\+Point}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Añade un punto al \mbox{\hyperlink{class_m_c_1_1_path}{Path}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_a0a610697d3ed8ec53b8538accbc0bbf5}{fill\+Native\+Points\+Array}} (float $\ast$array\+\_\+\+Pointer, vector$<$ \mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}} $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Rellena un array de float a partir de un puntero con los datos de un vector de puntos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_a07e06a889f16b401a0223c0c8ebe43ac}{fill\+Native\+Array}} (int $\ast$array\+\_\+\+Pointer, vector$<$ int $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Rellena un array de float a partir de un puntero con los datos de un vector de int. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_c_1_1_path_a285bfdd0fb6670b4a67e8746be4d009e}{Get\+Number\+Of\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de puntos que contiene el \mbox{\hyperlink{class_m_c_1_1_path}{Path}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_c_1_1_path_a63eed1623c0601dad0f19483fcf0284a}{Get\+Vert\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del vector de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_c_1_1_path_ac66a708a602d587a3c8cebc9d45d07f5}{Get\+Uvs\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del vector de Uvs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_c_1_1_path_a525cccd3453f81891b00e44cb9e13545}{Get\+Tris\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del vector de triangulos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_c_1_1_path_a5e0b883fb03677d6eaf9043153633360}{Create\+Mesh}} (float road\+Width=1, bool is\+Closed=false)
+\begin{DoxyCompactList}\small\item\em Crea la malla a partir de los puntos que contiene el \mbox{\hyperlink{class_m_c_1_1_path}{Path}}, puediendole decir el grosor y si es un circuito cerrado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_m_c_1_1_path_ab850a13848bfe5b5bc770f9cbd7fff67}{id}}
+\item 
+vector$<$ \mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}} $>$ \mbox{\hyperlink{class_m_c_1_1_path_ad67b29ddadeee7fdffd53b689d189b4b}{points}}
+\item 
+vector$<$ \mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}} $>$ \mbox{\hyperlink{class_m_c_1_1_path_a3521317823f18b9c6ac359f4df95fbea}{verts}}
+\item 
+vector$<$ \mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}} $>$ \mbox{\hyperlink{class_m_c_1_1_path_abe9ea5d2f1ee05edf5d532012f508af2}{uvs}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_m_c_1_1_path_a44ac13a0a0eed5661c9a90d0758d57e7}{tris}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_c_1_1_path_a976837d95eefdfb2b2dd1b423326cc03}\label{class_m_c_1_1_path_a976837d95eefdfb2b2dd1b423326cc03}} 
+\index{MC::Path@{MC::Path}!Path@{Path}}
+\index{Path@{Path}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{Path()}{Path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily M\+C\+::\+Path\+::\+Path (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+
+
+Crea un \mbox{\hyperlink{class_m_c_1_1_path}{Path}} vacio. 
+
+{\bfseries{Method\+: }} \mbox{\hyperlink{class_m_c_1_1_path}{Path}}
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a976837d95eefdfb2b2dd1b423326cc03}{M\+C\+::\+Path\+::\+Path}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_accd90c4da12784f0db738d4151795bd9}\label{class_m_c_1_1_path_accd90c4da12784f0db738d4151795bd9}} 
+\index{MC::Path@{MC::Path}!Path@{Path}}
+\index{Path@{Path}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{Path()}{Path()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily M\+C\+::\+Path\+::\+Path (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{float $\ast$}]{array\+\_\+\+Pointer,  }\item[{int}]{number\+\_\+of\+\_\+points }\end{DoxyParamCaption})}
+
+
+
+Crea un \mbox{\hyperlink{class_m_c_1_1_path}{Path}} a partir de un array de puntos. 
+
+{\bfseries{Method\+: }} \mbox{\hyperlink{class_m_c_1_1_path}{Path}}
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a976837d95eefdfb2b2dd1b423326cc03}{M\+C\+::\+Path\+::\+Path}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & ID \\
+\hline
+{\em float} & $\ast$ array\+\_\+\+Pointer \\
+\hline
+{\em int} & number\+\_\+of\+\_\+points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_c_1_1_path_ab846d8ee5ba7519030f263c6539afc79}\label{class_m_c_1_1_path_ab846d8ee5ba7519030f263c6539afc79}} 
+\index{MC::Path@{MC::Path}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{AddPoint()}{AddPoint()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Añade un punto al \mbox{\hyperlink{class_m_c_1_1_path}{Path}}. 
+
+{\bfseries{Method\+: }} Add\+Point
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_ab846d8ee5ba7519030f263c6539afc79}{M\+C\+::\+Path\+::\+Add\+Point}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & x \\
+\hline
+{\em float} & y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a5e0b883fb03677d6eaf9043153633360}\label{class_m_c_1_1_path_a5e0b883fb03677d6eaf9043153633360}} 
+\index{MC::Path@{MC::Path}!CreateMesh@{CreateMesh}}
+\index{CreateMesh@{CreateMesh}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{CreateMesh()}{CreateMesh()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::\+Create\+Mesh (\begin{DoxyParamCaption}\item[{float}]{road\+Width = {\ttfamily 1},  }\item[{bool}]{is\+Closed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Crea la malla a partir de los puntos que contiene el \mbox{\hyperlink{class_m_c_1_1_path}{Path}}, puediendole decir el grosor y si es un circuito cerrado. 
+
+{\bfseries{Method\+: }} Create\+Mesh
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a5e0b883fb03677d6eaf9043153633360}{M\+C\+::\+Path\+::\+Create\+Mesh}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & road\+Width \\
+\hline
+{\em bool} & is\+Closed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a07e06a889f16b401a0223c0c8ebe43ac}\label{class_m_c_1_1_path_a07e06a889f16b401a0223c0c8ebe43ac}} 
+\index{MC::Path@{MC::Path}!fillNativeArray@{fillNativeArray}}
+\index{fillNativeArray@{fillNativeArray}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{fillNativeArray()}{fillNativeArray()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::fill\+Native\+Array (\begin{DoxyParamCaption}\item[{int $\ast$}]{array\+\_\+\+Pointer,  }\item[{vector$<$ int $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Rellena un array de float a partir de un puntero con los datos de un vector de int. 
+
+{\bfseries{Method\+: }} fill\+Native\+Array
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a07e06a889f16b401a0223c0c8ebe43ac}{M\+C\+::\+Path\+::fill\+Native\+Array}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & $\ast$ array\+\_\+\+Pointer \\
+\hline
+{\em vector$<$int$>$} & \& data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a0a610697d3ed8ec53b8538accbc0bbf5}\label{class_m_c_1_1_path_a0a610697d3ed8ec53b8538accbc0bbf5}} 
+\index{MC::Path@{MC::Path}!fillNativePointsArray@{fillNativePointsArray}}
+\index{fillNativePointsArray@{fillNativePointsArray}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{fillNativePointsArray()}{fillNativePointsArray()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::fill\+Native\+Points\+Array (\begin{DoxyParamCaption}\item[{float $\ast$}]{array\+\_\+\+Pointer,  }\item[{vector$<$ \mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}} $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Rellena un array de float a partir de un puntero con los datos de un vector de puntos. 
+
+{\bfseries{Method\+: }} fill\+Native\+Points\+Array
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a0a610697d3ed8ec53b8538accbc0bbf5}{M\+C\+::\+Path\+::fill\+Native\+Points\+Array}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & $\ast$ array\+\_\+\+Pointer \\
+\hline
+{\em vector$<$point$>$} & \& data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a285bfdd0fb6670b4a67e8746be4d009e}\label{class_m_c_1_1_path_a285bfdd0fb6670b4a67e8746be4d009e}} 
+\index{MC::Path@{MC::Path}!GetNumberOfPoints@{GetNumberOfPoints}}
+\index{GetNumberOfPoints@{GetNumberOfPoints}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{GetNumberOfPoints()}{GetNumberOfPoints()}}
+{\footnotesize\ttfamily int M\+C\+::\+Path\+::\+Get\+Number\+Of\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el numero de puntos que contiene el \mbox{\hyperlink{class_m_c_1_1_path}{Path}}. 
+
+{\bfseries{Method\+: }} Get\+Number\+Of\+Points
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a285bfdd0fb6670b4a67e8746be4d009e}{M\+C\+::\+Path\+::\+Get\+Number\+Of\+Points}}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a525cccd3453f81891b00e44cb9e13545}\label{class_m_c_1_1_path_a525cccd3453f81891b00e44cb9e13545}} 
+\index{MC::Path@{MC::Path}!GetTrisSize@{GetTrisSize}}
+\index{GetTrisSize@{GetTrisSize}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{GetTrisSize()}{GetTrisSize()}}
+{\footnotesize\ttfamily int M\+C\+::\+Path\+::\+Get\+Tris\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño del vector de triangulos. 
+
+{\bfseries{Method\+: }} Get\+Tris\+Size
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a525cccd3453f81891b00e44cb9e13545}{M\+C\+::\+Path\+::\+Get\+Tris\+Size}}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_ac66a708a602d587a3c8cebc9d45d07f5}\label{class_m_c_1_1_path_ac66a708a602d587a3c8cebc9d45d07f5}} 
+\index{MC::Path@{MC::Path}!GetUvsSize@{GetUvsSize}}
+\index{GetUvsSize@{GetUvsSize}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{GetUvsSize()}{GetUvsSize()}}
+{\footnotesize\ttfamily int M\+C\+::\+Path\+::\+Get\+Uvs\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño del vector de Uvs. 
+
+{\bfseries{Method\+: }} Get\+Uvs\+Size
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_ac66a708a602d587a3c8cebc9d45d07f5}{M\+C\+::\+Path\+::\+Get\+Uvs\+Size}}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a63eed1623c0601dad0f19483fcf0284a}\label{class_m_c_1_1_path_a63eed1623c0601dad0f19483fcf0284a}} 
+\index{MC::Path@{MC::Path}!GetVertSize@{GetVertSize}}
+\index{GetVertSize@{GetVertSize}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{GetVertSize()}{GetVertSize()}}
+{\footnotesize\ttfamily int M\+C\+::\+Path\+::\+Get\+Vert\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño del vector de vertices. 
+
+{\bfseries{Method\+: }} Get\+Vert\+Size
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a63eed1623c0601dad0f19483fcf0284a}{M\+C\+::\+Path\+::\+Get\+Vert\+Size}}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_aeccc57f27fbb2476b23497dca4e332fc}\label{class_m_c_1_1_path_aeccc57f27fbb2476b23497dca4e332fc}} 
+\index{MC::Path@{MC::Path}!Load@{Load}}
+\index{Load@{Load}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::\+Load (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Carga los datos del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} a partir de un archivo binario. 
+
+{\bfseries{Method\+: }} Load
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_aeccc57f27fbb2476b23497dca4e332fc}{M\+C\+::\+Path\+::\+Load}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em string} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_c_1_1_path_a2e01f65cf05fed31b64bca532a725584}\label{class_m_c_1_1_path_a2e01f65cf05fed31b64bca532a725584}} 
+\index{MC::Path@{MC::Path}!Save@{Save}}
+\index{Save@{Save}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void M\+C\+::\+Path\+::\+Save (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Guarda los datos del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} en un archivo binario. 
+
+{\bfseries{Method\+: }} Save
+
+{\bfseries{Full\+Name\+:}} \mbox{\hyperlink{class_m_c_1_1_path_a2e01f65cf05fed31b64bca532a725584}{M\+C\+::\+Path\+::\+Save}}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em string} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_m_c_1_1_path_ab850a13848bfe5b5bc770f9cbd7fff67}\label{class_m_c_1_1_path_ab850a13848bfe5b5bc770f9cbd7fff67}} 
+\index{MC::Path@{MC::Path}!id@{id}}
+\index{id@{id}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int M\+C\+::\+Path\+::id}
+
+Identificador del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} \mbox{\Hypertarget{class_m_c_1_1_path_ad67b29ddadeee7fdffd53b689d189b4b}\label{class_m_c_1_1_path_ad67b29ddadeee7fdffd53b689d189b4b}} 
+\index{MC::Path@{MC::Path}!points@{points}}
+\index{points@{points}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}}$>$ M\+C\+::\+Path\+::points}
+
+Puntos del \mbox{\hyperlink{class_m_c_1_1_path}{Path}} \mbox{\Hypertarget{class_m_c_1_1_path_a44ac13a0a0eed5661c9a90d0758d57e7}\label{class_m_c_1_1_path_a44ac13a0a0eed5661c9a90d0758d57e7}} 
+\index{MC::Path@{MC::Path}!tris@{tris}}
+\index{tris@{tris}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{tris}{tris}}
+{\footnotesize\ttfamily vector$<$int$>$ M\+C\+::\+Path\+::tris}
+
+Indices de triangulos que conforman la malla \mbox{\Hypertarget{class_m_c_1_1_path_abe9ea5d2f1ee05edf5d532012f508af2}\label{class_m_c_1_1_path_abe9ea5d2f1ee05edf5d532012f508af2}} 
+\index{MC::Path@{MC::Path}!uvs@{uvs}}
+\index{uvs@{uvs}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{uvs}{uvs}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}}$>$ M\+C\+::\+Path\+::uvs}
+
+U\+Vs que conforman la malla \mbox{\Hypertarget{class_m_c_1_1_path_a3521317823f18b9c6ac359f4df95fbea}\label{class_m_c_1_1_path_a3521317823f18b9c6ac359f4df95fbea}} 
+\index{MC::Path@{MC::Path}!verts@{verts}}
+\index{verts@{verts}!MC::Path@{MC::Path}}
+\subsubsection{\texorpdfstring{verts}{verts}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{namespace_m_c_ae49fc0a0f3e78b01be72793719d33214}{point}}$>$ M\+C\+::\+Path\+::verts}
+
+Vertices que conforman la malla 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Tools/\+Unity\+Tool/\+Mesh\+Creator/code/dll/headers/\mbox{\hyperlink{_path_8hpp}{Path.\+hpp}}\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Tools/\+Unity\+Tool/\+Mesh\+Creator/code/dll/source/\mbox{\hyperlink{_path_8cpp}{Path.\+cpp}}\end{DoxyCompactItemize}
